@@ -1,0 +1,29 @@
+[{
+	"ProductID": "1",
+	"TypeCode": "mimo",
+	"Category": "mimo",
+	"Name": "mimo",
+	"NameLanguage": "mimo",
+	"Description": "mimo",
+	"DescriptionLanguage": "mimo",
+	"SupplierID": "mimo",
+	"SupplierName": "mimo",
+	"TaxTarifCode": "mimo",
+	"MeasureUnit": "mimo",
+	"WeightUnit": "mimo",
+	"CurrencyCode": "mimo",
+	"DimUnit": "mimo",
+	"Price": 2
+}, {
+	"ProductID": "2",
+	"CurrencyCode": "mimo",
+	"Price": 2
+}, {
+	"ProductID": "3",
+	"CurrencyCode": "mimo",
+	"Price": 2
+}, {
+	"ProductID": "4",
+	"CurrencyCode": "mimo",
+	"Price": 2
+}]

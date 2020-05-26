@@ -1,0 +1,16 @@
+<mvc:View controllerName="com.opensap.ManageProducts.controller.Object" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.f.semantic" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<semantic:SemanticPage id="page" headerPinnable="true" toggleHeaderOnTitleClick="true" showNavButton="true" busy="{objectView>/busy}"
+		busyIndicatorDelay="{objectView>/delay}">
+		<semantic:headerContent responsive="true">
+			<ObjectHeader id="objectHeader" title="{ProductID}" titleActive="true" titlePress="onShowDetailPopover" responsive="true"
+				number="{ path: 'Price', formatter: '.formatter.numberUnit' }" numberUnit="{CurrencyCode}"></ObjectHeader>
+			<ObjectNumber number="{ path: 'Price', formatter: '.formatter.numberUnit' }" unit="{CurrencyCode}"/>
+			<mvc:XMLView viewName="com.opensap.ManageProducts.view.ProductDetails"/>
+			<core:Fragment fragmentName="com.opensap.ManageProducts.view.SupplierInfo" type="XML"/>
+		</semantic:headerContent>
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press=".onShareEmailPress"/>
+		</semantic:sendEmailAction>
+	</semantic:SemanticPage>
+</mvc:View>
