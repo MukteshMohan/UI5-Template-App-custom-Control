@@ -108,11 +108,10 @@
 					]
 				},
 				{
-					"pattern" : "AddProduct",
-					"name" : "add",
-					"target" : "add"
+					"pattern": "AddProduct",
+					"name": "add",
+					"target": "add"
 				}
-
 			],
 			"targets": {
 				"worklist": {
@@ -142,5 +141,9 @@
 				}
 			}
 		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
 	}
 }
